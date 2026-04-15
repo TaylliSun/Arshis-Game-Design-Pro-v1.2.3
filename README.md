@@ -1,7 +1,9 @@
+# openclaw skill
+
 # Arshis-Game-Design-Pro-v1.2.3
+
 Professional game design tool for generating 90% complete commercial-grade game design documents. 26 core modules covering pricing, publishing, technical assessment, system design, dialogue, and event configuration.
 ---
-
 # Arshis-Game-Design-Pro
 
 <div align="center">
@@ -15,7 +17,7 @@ Professional game design tool for generating 90% complete commercial-grade game 
 
 Generate 90% complete commercial-grade game design documents with 26 core modules and 70000+ lines of code.
 
-[Features](#features) | [Quick Start](#quick-start) | [Modules](#modules) | [Examples](#examples) | [FAQ](#faq)
+[Features](#features) | [Quick Start](#quick-start) | [OpenClaw](#openclaw-integration) | [Examples](#examples) | [FAQ](#faq)
 
 </div>
 
@@ -51,8 +53,9 @@ Arshis-Game-Design-Pro is a professional game design assistant that generates 90
 
 #### 1. Pricing Strategy
 
+```bash
 python3 scripts/pricing_strategy.py rpg mass_market
-
+```
 
 - Complete price table (6 tiers: micro/small/medium/large/whale/premium)
 - Regional pricing (10 major markets)
@@ -171,6 +174,75 @@ python3 scripts/worldview_builder.py generate "Project Name" > output/worldview.
 # Combine documents
 cat output/*.md > complete_design.md
 ```
+
+---
+
+## OpenClaw Integration
+
+This project is designed as an OpenClaw skill for seamless integration with the OpenClaw AI agent platform.
+
+### What is OpenClaw?
+
+OpenClaw is an AI agent platform that allows you to create and deploy custom skills for AI assistants. Learn more at [OpenClaw Documentation](https://docs.openclaw.ai).
+
+### Installation as OpenClaw Skill
+
+```bash
+# Download the skill package
+wget https://github.com/Arshis/Arshis-Game-Design-Pro/releases/download/v1.2.3/Arshis-Game-Design-Pro-v1.2.3.zip
+
+# Extract to OpenClaw skills directory
+unzip Arshis-Game-Design-Pro-v1.2.3.zip -d ~/.openclaw/workspace/skills/
+
+# Verify installation
+test -f ~/.openclaw/workspace/skills/Arshis-Game-Design-Pro-release/SKILL.md && echo "Installation successful"
+```
+
+### Usage in OpenClaw
+
+Once installed, you can use the skill through OpenClaw chat:
+
+```
+# Simply ask in natural language:
+"帮我生成一个 RPG 游戏的付费设计"
+"生成一个战斗系统的策划案"
+"帮我写一个二次元游戏的台词"
+"生成一个完整的游戏策划案"
+```
+
+The skill will automatically generate professional game design documents based on your request.
+
+### Skill Structure
+
+```
+Arshis-Game-Design-Pro-release/
+├── SKILL.md # OpenClaw skill definition
+├── index.js # OpenClaw plugin entry point
+├── openclaw.plugin.json # Plugin configuration
+├── scripts/ # 26 Python modules
+└── docs/ # 11 documentation files
+```
+
+### OpenClaw Commands
+
+```bash
+# List installed skills
+openclaw skills list
+
+# Check skill status
+openclaw skills status Arshis-Game-Design-Pro
+
+# Reload skill (after updates)
+openclaw skills reload Arshis-Game-Design-Pro
+```
+
+### Integration Features
+
+- **Automatic Loading**: Skill loads automatically when OpenClaw starts
+- **Natural Language**: Use natural language to request game design tasks
+- **Context Aware**: Skill understands game type, audience, and requirements
+- **Output Formats**: Generates Markdown documents ready for team use
+- **Continuous Learning**: Learns from feedback to improve future outputs
 
 ---
 
@@ -304,6 +376,10 @@ Check the Releases page, download and replace with the latest version.
 
 Yes, MIT license, commercial-friendly.
 
+### Q6: How to use with OpenClaw?
+
+Install as OpenClaw skill and use natural language commands in chat. See [OpenClaw Integration](#openclaw-integration) for details.
+
 ---
 
 ## License
@@ -320,6 +396,7 @@ Thanks to the following research and resources:
 - MIT Media Lab Research
 - CD Projekt RED Technical Whitepaper
 - Unity 2025 Technical Content Review
+- OpenClaw Platform
 
 ---
 
@@ -328,6 +405,7 @@ Thanks to the following research and resources:
 - **GitHub**: https://github.com/Arshis/Arshis-Game-Design-Pro
 - **Issues**: https://github.com/Arshis/Arshis-Game-Design-Pro/issues
 - **Email**: arshis@example.com (optional)
+- **OpenClaw Docs**: https://docs.openclaw.ai
 
 ---
 
@@ -340,4 +418,5 @@ Make game design more professional, efficient, and evidence-based!
 If this project helps you, please give it a star!
 
 </div>
-```
+
+...(truncated)...
