@@ -402,9 +402,9 @@ Thanks to the following research and resources:
 
 ## Contact
 
-- **GitHub**: https://github.com/Arshis/Arshis-Game-Design-Pro
-- **Issues**: https://github.com/Arshis/Arshis-Game-Design-Pro/issues
-- **Email**: arshis@example.com (optional)
+- **GitHub**: https://github.com/Tayllisun/Arshis-Game-Design-Pro
+- **Issues**: https://github.com/Tayllisun/Arshis-Game-Design-Pro/issues
+- **Email**: taylli@rpl.studio
 - **OpenClaw Docs**: https://docs.openclaw.ai
 
 ---
