@@ -10,7 +10,7 @@ Professional game design tool for generating 90% complete commercial-grade game 
 
 **Professional Game Design Tool**
 
-[![Version](https://img.shields.io/badge/version-v1.2.3-blue.svg)](https://github.com/Arshis/Arshis-Game-Design-Pro/releases)
+[![Version](https://img.shields.io/badge/version-v1.2.3-blue.svg)](https://github.com/TaylliSun/Arshis-Game-Design-Pro/releases)
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 [![Modules](https://img.shields.io/badge/modules-26-red.svg)](docs/MODULES.md)
